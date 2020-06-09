@@ -1,4 +1,6 @@
-const key = 'dA3F3dxI9UzaYFAe8WMbdIkBkGwPiiSu';
+// INTERACTING WITH THE API
+
+const key = 'ZnZNnAUhI4ram3ZTp3IqoStUKmiRsJFs';
 
 
 //  GET CITY INFORMATION
@@ -29,16 +31,5 @@ const getWeather = async (locID) => {
     return data[0];
 
 };
-
-
-
-getCity('tokyo')                           
-    .then(data => {        
-        return getWeather(data.Key);                    // RETURNS A PROMISE
-    })
-    .then(data => {
-        console.log(data)
-    })
-    .catch(err => console.log(err));
 
 
